@@ -1,0 +1,50 @@
+package steadyjack.service;
+
+import java.util.List;
+import java.util.Map;
+
+import steadyjack.entity.Link;
+
+/**
+ * title:LinkService.java
+ * description:友情链接Service接口
+ * time:2017年1月16日 下午10:35:55
+ * author:debug-steadyjack
+ */
+public interface LinkService {
+
+    /**
+     * 添加友情链接
+     * @param link
+     * @return
+     */
+    public int add(Link link);
+
+    /**
+     * 修改友情链接
+     * @param link
+     * @return
+     */
+    public int update(Link link);
+
+    /**
+     * 查找友情链接信息
+     * @param map
+     * @return
+     */
+    public List<Link> list(Map<String,Object> map);
+
+    /**
+     * 获取总记录数
+     * @param map
+     * @return
+     */
+    public Long getTotal(Map<String,Object> map);
+
+    /**
+     * 删除友情链接
+     * @param id
+     * @return
+     */
+    public Integer delete(Integer id);
+}
